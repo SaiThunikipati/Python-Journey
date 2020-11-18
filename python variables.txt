@@ -1,0 +1,163 @@
+>>>print("hello world")
+hello world
+>>> print(2+3)
+5
+>>> phrase+"hello world"
+Traceback (most recent call last):
+  File "<pyshell#2>", line 1, in <module>
+    phrase+"hello world"
+NameError: name 'phrase' is not defined
+>>> 
+>>> phrase="hello world"
+>>> print(phrase)
+hello world
+>>> phrase="hello my world"
+>>> print(phrase)
+hello my world
+>>>
+VARIABLES :
+--------------------------------------------
+CREATING VARIABLE:
+* A varaiable are containers for sorting data values.
+* pyhon has non  command for declearing a variable.
+Example:
+>>> X=3#X is type of int
+>>> X="sally"#X is now type of str
+>>> print(X)
+sally
+>>> 
+Note:String varaiables are declared either singel or double quotes:
+VARIABLE NAMES:
+*A variable have a short name(like X & Y) or more descriptive name(like age & total_volume).
+* A variable name must be start with a letter or the underscore character.
+* A variable cannot start with a number.
+* A variable name can only contain alpha-numeric characters and underscores(A-Z,0-9,and _).
+* variable names are case -sensitive(age,age and AGE are three different variables.
+>>> #legal varaiable names:
+>>> myvar="john"
+>>> my_var="john"
+>>> _my_var="john"
+>>> myVar="john"
+>>> MYVAR="john"
+>>> myvar2+"john"
+>>> myvar2="john"
+>>> #illegal variables names:
+>>> 2myvar="john"
+SyntaxError: invalid syntax
+examples:
+------------
+Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> age
+Traceback (most recent call last):
+  File "<pyshell#0>", line 1, in <module>
+    age
+NameError: name 'age' is not defined
+>>> age=20
+>>> print (age)
+20
+>>> age = 30
+>>> age
+30
+>>> sentence = "my name is avi"
+>>> sentence
+'my name is avi'
+>>> sai = 20
+>>> ram = 49
+>>> ramesh = 25
+>>> sai, ram, ramesh = 20,49,25
+>>> sai
+20
+>>> ram
+49
+>>> ramesh
+25
+>>> sai=ram=ramesh=17
+>>> sai
+17
+>>> ram
+17
+>>> ramesh
+17
+>>> name,age = "sai",20
+>>> name
+'sai'
+>>> age
+20
+>>> name, age
+('sai', 20)
+>>> 
+Examples:Assign value of multiple variables.
+------------
+>>> print(X,Z)
+Blue Yellow
+>>> X,Y,Z="Blue","Red","Yellow"
+>>> print(X,Z)
+Blue Yellow
+>>> print(Z,X)
+Yellow Blue
+>>> print(Y,Z)
+Red Yellow
+>>> print(X,Y)
+Blue Red
+>>> X=Y=Z="Mango"
+>>> print(X,Y,Z)
+Mango Mango Mango
+>>> 
+Output variables:
+---------------------
+* The python print statement is often used to output variables.
+* To combine both text and a variable ,python uses the + character.
+ Example:
+------------
+>>> X="she is"
+>>> Y="awsome"
+>>> Z=X+Y
+>>> print(Z)
+she isawsome
+>>> X="awsome"
+>>> print("she is ",+X)
+Traceback (most recent call last):
+  File "<pyshell#42>", line 1, in <module>
+    print("she is ",+X)
+TypeError: bad operand type for unary +: 'str'
+>>> X="awsome"
+>>> print("she is ",+ X)
+Traceback (most recent call last):
+  File "<pyshell#44>", line 1, in <module>
+    print("she is ",+ X)
+TypeError: bad operand type for unary +: 'str'
+>>> X="awsome"
+>>> print("she is "+ X)
+she is awsome
+>>> X=34
+>>> Y=45
+>>> print(X+Y)
+79
+GLOBAL VARIABLES:
+---------------------------
+* Variables that are created outside of a function are know as the global varaiables.
+* Global varaiables can be used by everyone .Both inside and outside of the funtion.
+Example:
+-----------
+X = "awsome"
+def myfunc():
+    print("she is " + X)
+    
+myfunc()
+output:
+she isawsome
+2)
+X = "awsome"
+def myfunc():
+    X="fantastic"
+    print("she is" + X)
+    
+myfunc()
+
+print("she is"+ X)
+output:
+she isfantastic
+she isawsome
+> 
+
