@@ -1,0 +1,48 @@
+PYTHON NUMBERS:
+--------------------------
+There are three numeric types in python.They are
+1.int:eg-X=1
+2.float:eg-Y=2.9
+3.complex;eg-Z=1j
+>To verify the type of an object in python0, use the type() function.
+eg:
+X = 1
+Y = 2.9
+Z = 1j
+print(type(X))
+print(type(Y))
+print(type(Z))
+INT:
+-----
+Int,or integer is a whole number,positive or negative without decimals of unlimited length.
+FLOAT:
+---------
+Float or floating point number is a number positive or negative,containg one or more decimals.
+COMPLEX:
+--------------
+Complex numbers are written with a"j" as the imaginary part.
+TYPE CONVERSION:
+--------------------------
+You can covert from one type to another with the int(),float() and complex() methods
+eg:
+
+x = float(1)
+y = int(0.8)
+z = complex(x)
+
+print(x)
+print(y)
+print(z)
+
+print(type(x))
+print(type(y))
+print(type(z))
+output:
+---------
+1.0
+0
+(1+0j)
+<class 'float'>
+<class 'int'>
+<class 'complex'>
+
